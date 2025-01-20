@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    font-family: quicksand ;
+}
+
+/* Shared Styles */
+
+.btn-primary{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 10px;
+    width: 197px;
+    height: 50px;
+}
+
+
+/* Navbar */
+
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.nav-icon-text{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+#hamburger{
+    display: none;
+}
+ 
+.navbar > ul > li{
+    list-style: none;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#nav-contact-btn{
+    background-color: #FEA301;
+}
+
+#nav-home{
+    color: #FEA301;
+}
+#nav-about{
+    color: rgb(1, 172, 253);
+}
+#nav-facilities{
+    color: rgb(5, 212, 223);
+}
+#nav-admission{
+    color: rgb(93, 88, 239);
+}
+
+/* hero section */
+
+.hero{
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#hero-title-emp{
+    color: #FEA301;
+}
+
+#hero-title-vis{
+    color: rgb(1, 172, 253);
+}
+
+.hero-details{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* Responsive Part */
+
+@media screen and (max-width : 576px) {
+    header{
+        border-bottom: 1px solid #FEA301;
+    }
+
+    .nav-icon-text,
+    .nav-links,
+    #nav-contact-btn{
+        display: none;
+    }
+
+    .navbar,
+    .hero-container{
+        margin-left: 16px;
+        margin-right: 20px;
+        margin-bottom: 12px;
+    }
+    #hamburger{
+        display: block;
+        font-size: 30px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-title{
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .hero-details{
+        font-size: 0.90rem;
+        font-weight: 500;
+    }
+    .hero-details, .hero-title{
+        text-align: center;
+    }
+    .hero-img{
+        max-width: 90%;
+    }
+}
