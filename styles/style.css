@@ -140,6 +140,11 @@ header{
 /* Standard Curriculum */
 
 .standard-curriculum{
+    background: url("/assets/bg.png");
+    background-position:top right;
+}
+
+.standard-curriculum-container{
     max-width: 1160px;
     margin: 0 auto;
     display: flex;
@@ -155,9 +160,20 @@ header{
     text-align: center;
 }
 
+.marquee{
+    background-color: rgb(250, 222, 215);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 550;
+}
+
 .card-container{
     display: flex;
     gap: 28px;
+}
+
+.curriculum-cards > a{
+    text-decoration: none;
 }
 
 .curriculum-cards{
@@ -168,6 +184,7 @@ header{
     align-items: center;
     padding: 60px;
     border-radius: 18px;
+    width: 33%;
 }
 
 .curr-card-title{
@@ -188,6 +205,7 @@ header{
     font-size: 1rem;
     font-weight: 700;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .btn-curriculum-container{
@@ -206,22 +224,30 @@ header{
 
 #curr-card-1{
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+#curr-card-1 a{
     color: rgb(100, 200, 255);
 }
 
 #curr-card-2{
     background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+#curr-card-2 a{
     color: rgb(240, 170, 0);
 }
 #curr-card-3{
     background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+#curr-card-3 a{
     color: rgb(135, 0, 255);
 }
 
 /* our stories part */
 
 .our-stories{
-    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: url("/assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    /* background-repeat: no-repeat; */
     padding-bottom: 60px;
 }
 
@@ -258,6 +284,7 @@ header{
     width: 100%;
 }
 
+
 .stories-cards{
     border-radius: 16px;
     background-color: white;
@@ -277,6 +304,10 @@ header{
     right: -30px;
     /* margin-top: -100px;
     margin-left: 40px; */
+}
+
+#main-stories-date{
+    background: rgb(60, 216, 232);
 }
 
 .stories-date-purule{
@@ -417,6 +448,11 @@ footer{
         flex-direction: column;
     }
 
+    .standard-curriculum,
+    .our-stories{
+        background: none;
+    }
+
     .navbar,
     .hero-container,
     .standard-curriculum,
@@ -460,6 +496,7 @@ footer{
     }
     .curriculum-cards{
         padding: 40px;
+        width: 80%;
     }
     .stories-cards img{
         width: 100%;
@@ -485,5 +522,10 @@ footer{
     .about-school,
     .keep-in-touch{
         width: 100%;
+    }
+
+    .btn-primary{
+        width: 150px;
+        height: 50px;
     }
 }
