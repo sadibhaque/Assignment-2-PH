@@ -140,7 +140,7 @@ header{
 /* Standard Curriculum */
 
 .standard-curriculum{
-    background: url("/assets/bg.png");
+    background: url("assets/bg.png");
     background-position:top right;
 }
 
@@ -491,12 +491,15 @@ footer{
     .hero-img{
         max-width: 90%;
     }
+    .our-stories{
+        background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    }
     .curriculum-title{
         font-size: 2rem;
     }
     .curriculum-cards{
-        padding: 40px;
-        width: 80%;
+        padding: 20px;
+        width: 90%;
     }
     .stories-cards img{
         width: 100%;
@@ -514,6 +517,7 @@ footer{
         gap: 32px;
         padding-bottom: 70px;
         padding-top: 60px;
+        margin-bottom: 0;
     }
     .about-school{
         padding: 0;
